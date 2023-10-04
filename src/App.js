@@ -1,17 +1,5 @@
-function Hello({ name }) {
-  return (
-    <h1>Hello, {name}.</h1>
-  );
-}
-
 function App(){
-  return(
-    <div>
-      <Hello name="Christian"/>
-    </div>
-  )
+  const name= "Christian";
+  return <h1 className="app">Hello,{name}</h1>
 }
-
-
-
 export default App;
