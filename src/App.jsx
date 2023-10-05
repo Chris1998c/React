@@ -1,5 +1,9 @@
-import React from "react";
-import Hello from "./hello";
+
+
+
+function Hello(){
+  return <h2>Hello</h2>
+}
 
 function App(){
   return(
