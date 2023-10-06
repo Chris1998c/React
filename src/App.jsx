@@ -2,7 +2,7 @@
 
 
 function Hello(){
-  return <h2>Hello</h2>
+  return <div>Hello</div>
 }
 
 function App(){
