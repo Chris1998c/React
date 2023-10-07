@@ -1,8 +1,12 @@
 import React from "react";
 
-function AlertClock(){
+function AlertClock(onButtonClick){
+
    return(
-    <button onClick={()=>alert(Date())}>Pulsante per la data</button>
+    <div>
+
+    <button onClick={(onButtonClick)=>alert(Date())}>Pulsante per la data</button>
+    </div>
    ) 
 }
 
