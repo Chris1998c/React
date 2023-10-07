@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+
+/* meglio usare una funzione perchè si lavora con il numero precedente in questo caso,oppurecome è stato spiegato a lezione, il prev, cioè lo stato precedente, così da evitare problemi con l'asincrono*/
+
 function Counter() {
 
   const [counter, setCounter] = useState(0);
