@@ -8,7 +8,7 @@ import Welcome from "./Welcome";
 function App(){
   return(
     <div>
-  <Welcome name={"Christian"}/>
+  <Welcome/>
     </div>
   )
 }
