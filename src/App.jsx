@@ -1,11 +1,9 @@
-import Counter from "./Count";
+import Clock from "./Clock";
 
 function App(){
   return(
     <div>
-    <Counter initialValue={0} incrementAmount={1} decrementAmount={1} /> 
-    
-
+  <Clock/>
     </div>
   )
 }
