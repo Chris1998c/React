@@ -9,7 +9,7 @@ function App() {
   return (
       <div>
         
-          <Welcome name="Christian" age={24} /> 
+          <Welcome name="Christian" age={17} /> 
       </div>
   );
 }
