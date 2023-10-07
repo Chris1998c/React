@@ -6,7 +6,7 @@ function Welcome(props){
 return (
     <div>
     <p><strong>Welcome, {props.name}.</strong></p>
-    {props.age >= 18 && <Age age={props.age}/>}
+    {props.age !== undefined && <Age age={props.age}/>}
     </div>
 );
 }
