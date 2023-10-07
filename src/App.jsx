@@ -5,13 +5,13 @@ import Welcome from "./Welcome";
 
 
 
-function App(){
-  return(
-    <div>
-  <Welcome name={<p><strong>"Christian"</strong></p>}    age= {24} />
-  
-    </div>
-  )
+function App() {
+  return (
+      <div>
+        
+          <Welcome name="Christian" age={24} /> 
+      </div>
+  );
 }
 
-export default App
+export default App;
