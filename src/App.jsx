@@ -1,9 +1,9 @@
-import Clock from "./Clock";
+import MouseClicker from "./MouseClicker";
 
 function App(){
   return(
     <div>
-  <Clock/>
+      <MouseClicker name={"One"}/>
     </div>
   )
 }
