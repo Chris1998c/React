@@ -1,9 +1,12 @@
 
 
 
-function Welcome({name}){
+function Welcome(props){
 return (
-    <p>Welcome, {name}.</p>
+    <div>
+    <p>Welcome, {props.name}.</p>
+    <p>Your age is={props.age}</p>
+    </div>
 )
 }
 
