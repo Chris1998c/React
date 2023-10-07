@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 
 
-/* meglio usare una funzione perchè si lavora con il numero precedente in questo caso,oppurecome è stato spiegato a lezione, il prev, cioè lo stato precedente, così da evitare problemi con l'asincrono*/
 
-function Counter() {
+function Counter({initialValue, incrementAmount}) {
 
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(initialValue);
 
 
   const incrementCounter = () => {
-    setCounter(counter + 1);
+    setCounter(counter + incrementAmount);
   };
 
   return (
     <div>
       <h1>Counter= {counter}</h1>
-      <button onClick={incrementCounter}>Increment</button>
+      <button onClick={incrementCounter}>Increment by {incrementAmount}</button>
     </div>
   );
 }
