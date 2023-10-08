@@ -7,7 +7,7 @@ function MouseClicker({ name }) {
   
     const handleImageClick = (event) => {
       console.log(event.target.src);
-      event.stopPropagation(); // Impedisce la propagazione dell'evento verso l'alto fino al pulsante
+      event.stopPropagation(); 
     };
 
 return (
