@@ -6,8 +6,10 @@ function MouseClicker({ name }) {
     };
   
     const handleImageClick = (event) => {
-      console.log(event.target.src);
-      event.stopPropagation(); 
+
+      if (event.target.tagName !== 'IMG') {
+        console.log(event.target.getAttribute('name'));
+      }
     };
 
 return (
