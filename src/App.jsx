@@ -1,9 +1,10 @@
-import MouseClicker from "./MouseClicker";
+import MultiButton from "./MultiButton";
+
 
 function App(){
   return(
     <div>
-      <MouseClicker name={"NewYork"}/>
+      <MultiButton/>
     </div>
   )
 }
