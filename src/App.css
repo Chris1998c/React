@@ -1,3 +1,10 @@
 .App{
+  width: 100px;
   padding: 20vh;
+  margin: 10vh;
+}
+
+.bottone{
+  width: 150px;
+  border-radius: 5px;
 }
