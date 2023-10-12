@@ -1,11 +1,11 @@
-import { InteractiveWelcome } from "./InteractiveWelcome";
+import { Login } from "./Login";
 import "./App.css";
 
 
 function App (){
   return(
     <div className="App">
-      <InteractiveWelcome/>
+      <Login/>
     </div>
   )
 }
