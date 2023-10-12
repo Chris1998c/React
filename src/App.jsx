@@ -1,10 +1,11 @@
-import MultiButton from "./MultiButton";
+import { InteractiveWelcome } from "./InteractiveWelcome";
+import "./App.css";
 
 
-function App(){
+function App (){
   return(
-    <div>
-      <MultiButton/>
+    <div className="App">
+      <InteractiveWelcome/>
     </div>
   )
 }
