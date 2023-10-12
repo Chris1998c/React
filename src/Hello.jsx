@@ -1,6 +1,6 @@
 import React from "react";
 
-function Message(){
+function Hello(){
     return(
         <div>
         <h2>
@@ -10,4 +10,4 @@ function Message(){
 </div>)
 }
 
-export default Message;
+export default Hello;

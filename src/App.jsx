@@ -1,5 +1,5 @@
 import React from "react";
-import Hello from "./Message";
+import Hello from "./Hello";
 
 function App(){
   return(
