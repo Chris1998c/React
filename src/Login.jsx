@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 
-export function Login() {
+export function Login({ onLogin }) {
     const [username, setUsername] = useState("");
-    const [password, setPassword]=useState("")
+    const [password, setPassword] = useState("")
     const [remember, setRemember] = useState("");
 
     const handleUsername = (event) => {
@@ -13,25 +13,31 @@ export function Login() {
 
     };
 
-    const handlePassword=(event)=>{
+    const handlePassword = (event) => {
         setPassword(event.target.value)
     }
 
     const handleRememberChange = () => {
         setRemember(!remember);
-      };
+    };
 
+    const handleLogin = () => {
+        onLogin({ username, password, remember });
+    };
+
+     const loginDisable = username === "" && password === ""
 
 
     return (
-        <div>
+    <div>
             <input type="text" placeholder="Username" value={username} onChange={handleUsername}
             />
 
             <input type="password" placeholder="Password" value={password} onChange={handlePassword} />
 
             <input type="checkbox" checked="remeber" onChange={handleRememberChange} />
-            <button type="submit">sumbit</button>
+
+            <button onClick={handleLogin} disabled={loginDisable} type="submit">Login</button>
         </div>
     )
 }
