@@ -25,6 +25,12 @@ export function Login({ onLogin }) {
         onLogin({ username, password, remember });
     };
 
+    const handleReset=()=>{
+        setUsername("");
+        setPassword("");
+        setRemember("");
+    }
+
      const loginDisable = username === "" && password === ""
 
 
@@ -38,6 +44,7 @@ export function Login({ onLogin }) {
             <input type="checkbox" checked="remeber" onChange={handleRememberChange} />
 
             <button onClick={handleLogin} disabled={loginDisable} type="submit">Login</button>
+            <button onClick={handleReset}>reset</button>
         </div>
     )
 }
