@@ -1,11 +1,11 @@
-import { Login } from "./Login";
+import { UncLogin } from "./UncLogin";
 import "./App.css";
 
 
 function App (){
   return(
     <div className="App">
-      <Login/>
+      <UncLogin />
     </div>
   )
 }
