@@ -1,6 +1,6 @@
 import React from "react";
 
-
+// L'API FormData è semplice e facile da usare però non è ideale per i componenti controllati, anche se credo potrebbe variare in base al progetto il suo utilizzo.
 
 export function UncLogin({ unLogin }) {
 
@@ -33,7 +33,7 @@ const remember = formData.get("check");
 
         <button type="button" onClick={(event)=>event.target.reset}>Reset</button>
 
-        <button className="bottone" type="submit" onClick={unLogin}>Login</button>
+        <button className="bottone" type="submit" onClick={handleLogin}>Login</button>
       </form>
     </div>
   );
