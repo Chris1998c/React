@@ -3,17 +3,16 @@ import { useRef, useEffect } from "react";
 
 export function FocusableInput() {
 
-    const inputRef = useRef("");
+    const isMounted = useRef("");
 
     useEffect(() => {
-        if (inputRef.current) {
-            inputRef.current.focus();
-        }
+        if (!isMounted.current) {
+            console.log("component is mounted");
+        
+            isMounted.current= true; }
     }, []);
 
     return (
-        <div>
-            <input type="text" placeholder="Testo" ref={inputRef} />
-        </div>
+        <div className="content"> Component is mounted!!! </div>
     )
 }

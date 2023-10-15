@@ -1,11 +1,15 @@
 import { FocusableInput } from "./FocusableInput";
 import "./App.css";
+import { StrictMode } from "react";
+
 
 
 function App() {
   return (
     <div className="App">
-      < FocusableInput />
+    <StrictMode>
+      <FocusableInput />
+    </StrictMode>
     </div>
   )
 }
