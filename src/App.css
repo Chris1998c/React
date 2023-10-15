@@ -5,12 +5,6 @@
  
 }
 
-.bottone{
-  width: 150px;
-  border-radius: 5px;
-}
-
-.content{
-  font-size: 20px;
-  font-weight: bold;
+.list{
+  margin: 10px;
 }

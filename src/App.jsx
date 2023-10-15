@@ -1,13 +1,15 @@
-import { Counter } from "./Counter";
+import { Colors } from "./Colors";
 import "./App.css";
 
 
 
 
 function App() {
+  const colorList = ["Red", "Blue", "Yellow"];
+
   return (
     <div className="App">
-    <Counter initialValue={0}/>
+    <Colors items={colorList}/>
     </div>
   )
 }
