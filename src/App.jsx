@@ -2,13 +2,15 @@ import { UncLogin } from "./UncLogin";
 import "./App.css";
 
 
-function App (){
-  return(
+function App() {
+  return (
     <div className="App">
-      <UncLogin />
+      <UncLogin/>
     </div>
   )
-}
+  }
+  
+
 
 
 export default App;
