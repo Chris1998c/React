@@ -19,7 +19,6 @@ export function Counter({ initialValue }) {
 
     useEffect(() => {
         console.log(direction.current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [direction.current]);
 
 
