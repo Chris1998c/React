@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const TodoList = () => {
+    
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState('');
 
   const addItem = () => {
     if (newItem) {
-
       setItems([...items, newItem]);
       setNewItem("");
     }
@@ -21,7 +21,7 @@ const TodoList = () => {
         ))}
       </ul>
       <div>
-        <input type="text" value={newItem} onChange={(e) => setNewItem(e.target.value)}/>
+        <input  type="text" value={newItem} onChange={(e) => setNewItem(e.target.value)}/>
         <button onClick={addItem}>Add Item</button>
       </div>
     </div>
