@@ -1,15 +1,13 @@
-import { FocusableInput } from "./FocusableInput";
+import { Counter } from "./Counter";
 import "./App.css";
-import { StrictMode } from "react";
+
 
 
 
 function App() {
   return (
     <div className="App">
-    <StrictMode>
-      <FocusableInput />
-    </StrictMode>
+    <Counter initialValue={0}/>
     </div>
   )
 }
