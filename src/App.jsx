@@ -1,7 +1,7 @@
 
 
-import TodoList from "./ToDoList";
-import "./App.css";
+import { Welcome } from "./Welcome";
+
 
 
 
@@ -11,8 +11,8 @@ function App() {
 
 
   return (
-    <div className="App">
-      <TodoList/>
+    <div >
+      <Welcome/>
     </div>
   )
 }
