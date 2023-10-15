@@ -1,11 +1,11 @@
-import { UncLogin } from "./UncLogin";
+import { FocusableInput } from "./FocusableInput";
 import "./App.css";
 
 
-function App (){
-  return(
+function App() {
+  return (
     <div className="App">
-      <UncLogin />
+      < FocusableInput />
     </div>
   )
 }
