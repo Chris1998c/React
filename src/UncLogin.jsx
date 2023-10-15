@@ -1,30 +1,40 @@
 import React from "react";
 
 
-//  un secondo metodo per accedere ai dati potrebbe essere document.getelementbyid
 
-export function UncLogin() {
-  const handleSubmit = (event) => {
+ export function UncLogin({ unLogin }) {
+  let usernameInput = React.createRef();
+  let passwordInput = React.createRef();
+  let checkInput = React.createRef();
+
+  const handleLogin = (event) => {
     event.preventDefault();
 
-    const form = event.target; 
-    const username = form.elements.username.value;
-    const password = form.elements.password.value;
-    const remember = form.elements.check.checked;
+    const username = usernameInput.current.value;
+    const password = passwordInput.current.value;
+    const remember = checkInput.current.checked;
 
-    console.log("Username:", username);
-    console.log("Password:", password);
-    console.log("Remember:", remember);
+    unLogin({ username, password, remember });
+    console.log(username, password, remember);
+
+    event.target.reset();
   };
+
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input name="username" type="text" placeholder="Username" />
-        <input name="password" type="password" placeholder="Password" />
-        <input name="check" type="checkbox" />
-        <button type="submit">Submit</button>
+      <form onSubmit={handleLogin}>
+
+        <input ref={usernameInput} type="text" placeholder="Username"  />
+
+        <input ref={passwordInput} type="password" placeholder="Password"  />
+
+        <input ref={checkInput} type="checkbox"  />
+
+        <button type="button" onClick={(event)=>event.target.reset}>Reset</button>
+
+        <button className="bottone" type="submit">Login</button>
       </form>
     </div>
   );
-}
+  }
