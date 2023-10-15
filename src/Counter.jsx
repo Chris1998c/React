@@ -1,43 +1,35 @@
-import { useState, useEffect, useRef } from "react";
+import { useState,} from "react";
 
 
-export function Counter({ initialValue }) {
+export function Counter() {
 
-    const [count, setCount] = useState(initialValue);
+    const [count, setCount] = useState(0);
 
-    const direction = useRef("");
+  const increment = () => {
+    setCount(count + 1);
+  };
 
-
-    useEffect(() => {
-        if (count > initialValue) {
-            direction.current = "UP"
-        } else if (count < initialValue) {
-            direction.current = "DOWN"
-        }
-    }, [count, initialValue]);
+  const decrement = () => {
+    setCount(count - 1);
+  };
 
 
-    useEffect(() => {
-        console.log(direction.current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [direction.current]);
+  const counterStyle = {
+    fontSize: '30px',
+    backgroundColor: 'yellow',
+    padding: '25px',
+    border: '1px solid black',
+    display: 'inline-block',
+  };
 
 
-
-    const handleIncrement = () => {
-        setCount(count + 1);
-    }
-
-    const handleDecrement = () => {
-        setCount(count - 1);
-    }
-
-    return(
-        <div>
-            <h1>Counter= {count}</h1>
-            <button onClick={handleIncrement}> Increment</button>
-            <button onClick={handleDecrement}> Decrement</button>
-        </div>
-    )
-
-}
+  return (
+    <div>
+      <h1>Counter</h1>
+      <button onClick={increment}>Increment</button>
+      <span style={counterStyle}>{count}</span>
+      <button onClick={decrement}>Decrement</button>
+      
+    </div>
+  );
+};
