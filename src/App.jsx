@@ -5,7 +5,12 @@ import "./App.css";
 
 
 function App() {
-  const colorList = ["Red", "Blue", "Yellow"];
+
+  const colorList = [
+    { id:1, name: 'Red' },
+    { id:2, name: 'Blue' },
+    { id:4, name: 'Yellow' },
+  ];
 
   return (
     <div className="App">
