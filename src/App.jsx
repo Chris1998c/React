@@ -1,13 +1,11 @@
-import { Counter } from "./Counter";
+import { Login } from "./Login";
 import "./App.css";
 
 
-
-
-function App() {
-  return (
+function App (){
+  return(
     <div className="App">
-    <Counter initialValue={0}/>
+      <Login/>
     </div>
   )
 }
