@@ -1,14 +1,13 @@
+import React from 'react';
+import Color from './Color';
 
-
-
-export function Colors({items}){
-  return (
+export function Colors({ items }) {
+  return(
     <ul>
-      {items.map((color) => (
-        <li className="list" key= {color} >{color.id} {color.name} </li>
+      {items.map((color, index) => (
+        <Color key={index} color={color} />
       ))}
     </ul>
   );
 };
 
- 
