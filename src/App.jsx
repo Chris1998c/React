@@ -1,9 +1,5 @@
 import React from "react";
-
-import Welcome from "./Welcome";
-
-
-
+import { Welcome } from "./Welcome";
 
 function App(){
   return(

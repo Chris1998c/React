@@ -1,14 +1,9 @@
+import React from "react";
 
-
-
-function Welcome(props){
-return (
-    <p>Welcome, {props.name}.</p>
-)
-}
-
-Welcome.defaultProps={
-    name: "Christian Conte",
-};
-
-export default Welcome
+ export function Welcome({ name = 'Christian Conte' }) {
+    return (
+      <h1>Benvenuto, {name}.</h1>
+    );
+  }
+  
+  
