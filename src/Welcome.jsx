@@ -1,13 +1,9 @@
 
-
-
-function Welcome(props){
-return (
+export function Welcome({ name, age }) {
+  return (
     <div>
-    <p>Welcome, {props.name}.</p>
-    <p>Your age is={props.age}</p>
+      <p>Welcome, {name}.</p>
+      <p>Your age is: {age}</p>
     </div>
-)
+  );
 }
-
-export default Welcome
