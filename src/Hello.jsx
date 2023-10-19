@@ -1,13 +1,10 @@
 import React from "react";
 
-function Hello(){
-    return(
+export function Hello() {
+    return (
         <div>
-        <h2>
-            Hello,World!
-        </h2>
-<p>"What a beautiful day!".</p>
-</div>)
+            <h2> Hello,World! </h2>
+            <p>"What a beautiful day!".</p>
+        </div>)
 }
 
-export default Hello;
