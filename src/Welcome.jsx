@@ -1,8 +1,6 @@
-import Age from "./age"
+import Age from "./Age"
 
-
-
-function Welcome(props){
+export function Welcome(props){
 return (
     <div>
     <p><strong>Welcome, {props.name}.</strong></p>
@@ -10,5 +8,3 @@ return (
     </div>
 );
 }
-
-export default Welcome
