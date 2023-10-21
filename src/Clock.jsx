@@ -2,9 +2,9 @@ import React from 'react';
 import { useLanguage } from './LanguageContext';
 
 const greetings = {
-  en: <h3>Hello</h3>,
-  it: <h3>Ciao</h3>,
-  es: <h3>Hola</h3>,
+  en: <h3>Hello,Current time:</h3>,
+  it: <h3>Ciao, Ora esatta:</h3>,
+  es: <h3>Hola,Hora actual:</h3>,
 
 };
 export function Clock(){

@@ -7,7 +7,7 @@ function App(){
     <LanguageProvider>
       <div>
         <h1>Language Selector</h1>
-        <Clock />
+        <Clock/>
       </div>
     </LanguageProvider>
   );
