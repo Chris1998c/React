@@ -1,11 +1,14 @@
-import React from "react";
-import Hello from "./Hello";
+import React from 'react';
+import { Container } from './Container';
 
-function App(){
-  return(
+function App() {
+  return (
     <div>
-      <Hello/>
+      <Container>
+        <h1>Ciao, sono Christian...</h1>
+      </Container>
     </div>
-  )
+  );
 }
-export default App
+
+export default App;
