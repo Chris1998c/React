@@ -4,8 +4,8 @@ import { Container } from './Container';
 function App() {
   return (
     <div>
-      <Container>
-        <h1>Ciao, sono Christian...</h1>
+      <Container title="Container">
+        <p>Ciao, sono Christian...</p>
       </Container>
     </div>
   );
