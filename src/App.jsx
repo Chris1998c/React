@@ -1,14 +1,16 @@
 import React from 'react';
-import { Container } from './Container';
+import { LanguageProvider } from './LanguageContext';
+import { Clock } from './Clock';
 
-function App() {
+function App(){
   return (
-    <div>
-      <Container title="Container">
-        <p>Ciao, sono Christian...</p>
-      </Container>
-    </div>
+    <LanguageProvider>
+      <div>
+        <h1>Language Selector</h1>
+        <Clock />
+      </div>
+    </LanguageProvider>
   );
-}
+};
 
 export default App;
