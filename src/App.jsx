@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className='App'> 
-    <GithubUser username="Chris1998c"/>
+    <GithubUser />
     </div>
   );
 }
