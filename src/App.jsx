@@ -1,11 +1,11 @@
 import React from 'react';
-import Location from './Location';
+import { Counter } from './Counter';
 
 function App() {
 
   return (
     <div className='App'> 
-    <Location/>
+    <Counter/>
     </div>
   );
 }
