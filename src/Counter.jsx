@@ -14,16 +14,3 @@ export function Counter() {
   );
 }
 
-function App() {
-  
-  return (
-    <div className='App'> 
-    <container>
-    <Counter/>
-    </container>
-    </div>
-  );
-}
-
-export default App;
-
