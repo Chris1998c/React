@@ -1,12 +1,14 @@
 import React from 'react';
-import { GithubUser } from './GithubUser';
+import { GithubUsers } from './GithubUsers';
 
-
-function App(){
+function App() {
   return (
-      <div>
-        <GithubUser username="Chris1998c"/>
-      </div>
+    <div className='App'> 
+      <GithubUsers />
+    </div>
   );
-};
+}
+
+
 export default App;
+

@@ -17,10 +17,9 @@ useEffect(()=>{
 
 return(
     <div>
-        
-        {data && <h1>Name:{data.name} </h1> }
-        {data && <h3>Login:{data.login}</h3>}
-        {data &&  <img className="avatar" src={data.avatar_url} alt=""  />}
+        {data && <h1>Name: {data.name} </h1> }
+        {data && <h3>Login: {data.login}</h3>}
+        {data &&  <img className="avatar" src={data.avatar_url} alt="immagine"/>}
     </div>
 )
 }
