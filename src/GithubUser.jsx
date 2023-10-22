@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 
 export function GithubUser({username}){
-
 const[data,setData]=useState(null)
 
 useEffect(()=>{
@@ -14,10 +13,8 @@ useEffect(()=>{
         setData(json)
     })
 },[username])
-
 return(
-    <div>
-        
+    <div> 
         {data && <h1>Name:{data.name} </h1> }
         {data && <h3>Login:{data.login}</h3>}
         {data &&  <img className="avatar" src={data.avatar_url} alt=""  />}
