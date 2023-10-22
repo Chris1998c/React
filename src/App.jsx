@@ -1,11 +1,11 @@
 import React from 'react';
-import { MyForm } from './MyForm';
+import { GithubUser } from './GithubUser';
 
 function App() {
-  
+
   return (
     <div className='App'> 
-    <MyForm/>
+    <GithubUser username="Chris1998c"/>
     </div>
   );
 }
