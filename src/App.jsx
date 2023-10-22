@@ -1,11 +1,11 @@
 import React from 'react';
-import { GithubUser } from './GithubUser';
+import Location from './Location';
 
 function App() {
 
   return (
     <div className='App'> 
-    <GithubUser />
+    <Location/>
     </div>
   );
 }
