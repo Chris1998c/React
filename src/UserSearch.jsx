@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-
 export function UserSearch({ onSearch }) {
     const [username, setUsername] = useState('');
   
     const handleSearch = () => {
       onSearch(username);
     };
-  
+    
     return (
       <div>
         <h3>Serch Users</h3>
