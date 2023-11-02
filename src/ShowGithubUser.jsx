@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { GithubUser } from "./GitHubUser";
 
 export function ShowGithubUser() {
@@ -7,6 +7,7 @@ export function ShowGithubUser() {
     return(
         <div>
             <GithubUser username={username}/>
+            <Link to="Chris1998c">Christian Conte</Link> 
         </div>
     )
 }
