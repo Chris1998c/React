@@ -1,14 +1,14 @@
 import { Link, Route, Routes } from "react-router-dom"
-import { GithubUser } from "./components/GithubUser"
+import { GithubUser } from "./GitHubUser"
 
 function App() {
 
   return (
     <div>
-      <Link to="user">Github user</Link>
-      <Routes>
-        <Route path="user" element={<GithubUser />} />
-      </Routes>
+    <Link to="users">Github user</Link>
+    <Routes>
+      <Route path="users" element={<GithubUser/>}/>
+    </Routes>
     </div>
   )
 }
