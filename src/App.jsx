@@ -2,6 +2,7 @@ import { Link, Route, Routes } from "react-router-dom"
 import { Counter } from "./Counter"
 import { ShowGithubUser } from "./ShowGithubUser"
 import { Welcome } from "./Welcome"
+import { NotFound } from "./NotFoud"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<Welcome name="Christian"/>}/>
       <Route path="/counter" element={<Counter initialValue={0} incrementAmount={1}/>}/>
       <Route path="users/:username" element={<ShowGithubUser/>}/>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
     </div>
   )
