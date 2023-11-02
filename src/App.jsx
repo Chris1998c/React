@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import { Counter } from "./components/Counter"
-import { Welcome } from "./components/Welcome"
+import { ShowGithubUser } from "./ShowGithubUser"
+import { Counter } from "./Counter.Jsx"
+import { Welcome } from "./Welcome"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Welcome name="Christian"/>}/>
       <Route path="/counter" element={<Counter initialValue={0} incrementAmount={1}/>}/>
+      <Route path="users/:username" element={<ShowGithubUser/>}/>
     </Routes>
   )
 }
