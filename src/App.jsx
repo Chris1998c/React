@@ -1,15 +1,13 @@
-import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Welcome from './Welcome'; 
+import { Route, Routes } from "react-router-dom"
+import { Welcome } from "./Welcome"
 
 function App() {
-  const name = "Christian"; 
 
   return (
-    <BrowserRouter>
-      <Route path="/" render={() => <Welcome name={name} />} />
-    </BrowserRouter>
-  );
+    <Routes>
+      <Route path="/" element={<Welcome name="Christian"/>}/>
+    </Routes>
+  )
 }
 
-export default App;
+export default App
