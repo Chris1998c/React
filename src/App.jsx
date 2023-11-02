@@ -1,5 +1,5 @@
 import { Link, Route, Routes } from "react-router-dom"
-import { GithubUser } from "./components/GithubUser"
+import { GithubUser } from "./GithubUser"
 
 function App() {
 
