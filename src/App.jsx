@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import { Counter } from "./components/Counter"
-import { Welcome } from "./components/Welcome"
+import { Counter } from "./Counter"
+import { Welcome } from "./Welcome"
 
 function App() {
 
