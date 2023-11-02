@@ -1,15 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Welcome from './Welcome'; 
+import { Route, Routes } from "react-router-dom"
+import { Counter } from "./components/Counter"
+import { Welcome } from "./components/Welcome"
 
 function App() {
-  const name = "Christian"; 
 
   return (
-    <BrowserRouter>
-      <Route path="/" render={() => <Welcome name={name} />} />
-    </BrowserRouter>
-  );
+    <Routes>
+      <Route path="/" element={<Welcome name="Christian"/>}/>
+      <Route path="/counter" element={<Counter initialValue={0} incrementAmount={1}/>}/>
+    </Routes>
+  )
 }
 
-export default App;
+export default App
